@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane   xmlns:fx="http://javafx.com/fxml/1" fx:controller="firwanaa.Assign4FXMLController">
+    <fx:define>
+        <Insets fx:id="Margins" top="0" right="5" bottom="5" left="5" />
+    </fx:define>   
+    
+    <top>
+        <GridPane >
+            <children>
+                <Label fx:id="lbltop" text="Inventory Tracker" GridPane.columnIndex="2" GridPane.rowIndex="0"
+                       GridPane.halignment="RIGHT"/>
+                <Label fx:id="lbl1" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField  fx:id="txtf1" GridPane.columnIndex="1" GridPane.rowIndex="1" editable="false" />
+                <Label fx:id="lbl2" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="txtf2" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.columnSpan="3" editable="false" />
+                <Label fx:id="lbl3" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextField fx:id="txtf3" GridPane.columnIndex="1" GridPane.rowIndex="3" editable="false"  />
+                <Label fx:id="lbl4" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <TextField fx:id="txtf4" GridPane.columnIndex="3" GridPane.rowIndex="3" editable="false"  />
+                <Label fx:id="lbl5" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <TextField fx:id="txtf5" GridPane.columnIndex="1" GridPane.rowIndex="4" editable="false"  />
+            </children>
+        </GridPane>
+    </top>
+    
+    <center>
+        <HBox spacing="10" alignment="CENTER" BorderPane.margin="$Margins">
+            <children>
+                <Button fx:id="BtnAdd" text="_Add" mnemonicParsing="true"  />
+                <Button fx:id="BtnSave"  text="_Save" mnemonicParsing="true" disable="true" />
+                <Button fx:id="BtnOrders" text="_Orders" mnemonicParsing="true" disable="false" />
+                <Button fx:id="BtnExit" text="_Exit" mnemonicParsing="true" />
+            </children>
+        </HBox>
+    </center>
+    
+    <bottom>
+        <VBox>
+            <ListView fx:id="listView" />
+            <Label fx:id="lblBelow" text="" />
+        </VBox>
+    </bottom>
+
+</BorderPane>
+
+
